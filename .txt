@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Desarrollo Web</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<h1>Desarrollo Web</h1>
+<ul>
+<li><a href="#diseno-web">Diseño Web</a></li>
+<li><a href="#desarrollo-front-end">Desarrollo Front-end</a></li>
+<li><a href="#desarrollo-back-end">Desarrollo Back-end</a></li>
+<li><a href="#e-commerce">E-commerce</a></li>
+<li><a href="#aplicaciones-moviles">Aplicaciones Móviles</a></li>
+<li><a href="#mantenimiento-y-actualizacion">Mantenimiento y Actualización</a></li>
+</ul>
+
+<h2>Tecnologías</h2>
+<ul>
+<li>HTML5</li>
+<li>CSS3</li>
+<li>JavaScript</li>
+<li>React</li>
+<li>Angular</li>
+<li>Vue.js</li>
+<li>Node.js</li>
+<li>PHP</li>
+<li>MySQL</li>
+<li>MongoDB</li>
+</ul>
+
+<h2>Servicios Adicionales</h2>
+<ul>
+<li>Optimización para motores de búsqueda (SEO)</li>
+<li>Marketing digital</li>
+<li>Hosting y servidor</li>
+<li>Asesoramiento en tecnología</li>
+</ul>
+
+<section id="diseno-web">
+<h2>Diseño Web</h2>
+<p>Creación de diseños personalizados y responsivos</p>
+</section>
+
+<section id="desarrollo-front-end">
+<h2>Desarrollo Front-end</h2>
+<p>Construcción de interfaces de usuario con HTML, CSS y JavaScript</p>
+</section>
+
+<section id="desarrollo-back-end">
+<h2>Desarrollo Back-end</h2>
+<p>Creación de lógica de negocio y bases de datos con tecnologías como PHP, Python, Ruby, etc.</p>
+</section>
+
+<section id="e-commerce">
+<h2>E-commerce</h2>
+<p>Desarrollo de tiendas en línea con plataformas como Shopify, WooCommerce, Magento, etc.</p>
+</section>
+
+<
