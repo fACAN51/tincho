@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encuentra tu vehiculo 14z</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#autos">Autos</a></li>
+        <li><a href="#motos">Motos</a></li>
+        <li><a href="#camionetas">Camionetas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="contenido">
+    <!-- Aquí se cargará el contenido correspondiente a cada menú -->
+  </div>
+  <footer>
+    <p>&copy; 2024 Venta de Vehículos tincho14z</p>
+  </footer>
+
+  <script>
+    // Cargar contenido correspondiente a cada menú
+    document.addEventListener("DOMContentLoaded", function() {
+      const menuItems = document.querySelectorAll("nav ul li a");
+      const contenido = document.getElementById("contenido");
+
+      menuItems.forEach(function(item) {
+        item.addEventListener("click", function(event) {
+          event.preventDefault();
+          const id = event.target.getAttribute("href").replace("#", "");
+          cargarContenido(id);
+        });
+      });
+
+      function cargarContenido(id) {
+        switch (id) {
+          case "inicio":
+            contenido.innerHTML = `
+              <h1>Bienvenido a Venta de Vehículos tincho14z</h1>
+              <p>Encuentra el vehículo de tus sueños acompañado de los mejores expertos en autos</p>
+            `;
+            break;
+          case "autos":
+            contenido.innerHTML = `
+              <h2>Autos en venta</h2>
+              <ul>
+                <li>
+                  <img src="auto1.jpg" alt="Auto 1">
+                  <h3>Toyota Corolla 2015</h3>
+                  <p>Precio: $15,000 dolares</p>
+                </li>
+                <li>
+                  <img src="auto2.jpg" alt="Auto 2">
+                  <h3>Honda Civic 2018</h3>
+                  <p>Precio: $20,000 dolares</p>
+                </li>
+              </ul>
+                   <li>
+                  <img src="auto3.jpg" alt="Auto 1">
+                  <h3>  volkswagen Vento 2024</h3>
+                  <p>Precio: $30,000 dolares</p>
+                </li>
+                <img src="auto4.jpg" alt="Auto 1">
+                  <h3> volkswagen bora 2022</h3>
+                  <p>Precio: $22,000 dolares</p>
+                </li>
+                 <img src="auto5.jpg" alt="Auto 1">
+                  <h3> ford focus  2015</h3>
+                  <p>Precio: $12,000 dolares</p>
+                </li>
+            `;
+            break;
+          case "motos":
+            contenido.innerHTML = `
+              <h2>Motos en venta</h2>
+              <ul>
+                <li>
+                  <img src="moto1.jpg" alt="Moto 1">
+                  <h3>Yamaha FZ6R 2012</h3>
+                  <p>Precio: $8,000 dolares</p>
+                </li>
+                <li>
+                  <img src="moto2.jpg" alt="Moto 2">
+                  <h3>Suzuki GSX650F 2015</h3>
+                  <p>Precio: $12,000 dolares</p>
+                </li>
+                   <li>
+                  <img src="moto3.jpg" alt="Moto 1">
+                  <h3>  honda wave 2022</h3>
+                  <p>Precio: $2,000 dolares</p>
+                </li>
+                     <li>
+                  <img src="moto4.jpg" alt="Moto 1">
+                  <h3>yamaha crypton 2022</h3>
+                  <p>Precio: $1,500 dolares</p>
+                </li>
+                     <li>
+                  <img src="moto5.jpg" alt="Moto 1">
+                  <h3>corven triax 2022 </h3>
+                  <p>Precio: $3,000 dolares</p>
+                </li>
+              </ul>
+            `;
+            break;
+          case "camionetas":
+            contenido.innerHTML = `
+              <h2>Camionetas en venta</h2>
+              <ul>
+                <li>
+                  <img src="camioneta1.jpg" alt="Camioneta 1">
+                  <h3>Ford F-150 2018</h3>
+                  <p>Precio: $30,000 dolares</p>
+                </li>
+                <li>
+                  <img src="camioneta2.jpg" alt="Camioneta 2">
+                  <h3>Chevrolet Silverado 2015</h3>
+                  <p>Precio: $25,000 dolares</p>
+                </li>
+                   <li>
+                  <img src="camioneta3.jpg" alt="Camioneta 3">
+                  <h3>toyota hilux 2018</h3>
+                  <p>Precio: $50,000 dolares</p>
+                </li>
+                   <li>
+                  <img src="camioneta4.jpg" alt="Camioneta 4">
+                  <h3>Ford raptor 2022</h3>
+                  <p>Precio: $22,000 dolares</p>
+                </li>
+                   <li>
+                  <img src="camioneta5.jpg" alt="Camioneta 5">
+                  <h3>RAM 1500 2023</h3>
+                  <p>Precio: $67,000 dolares</p>
+                </li>
+              </ul>
+            `;
+            break;
+          case "contacto":
+            contenido.innerHTML = `
+              <h2>Contacto</h2>
+              <p>Teléfono: 112456789</p>
+              <p>Correo electrónico: florenmar20802gmail.com</p>
+            `;
+            break;
+        }
+      }
+    });
+  </script>
+</body>
+</html>
